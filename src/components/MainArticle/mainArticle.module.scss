@@ -1,0 +1,144 @@
+.article {
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #F4F4F4;
+  background: #FFF;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+}
+
+.flexChild {
+  max-width: calc(50% - 12px);
+  height: fit-content;
+  flex-wrap: nowrap;
+  @media (max-width: 420px) {
+    max-width: 100%;
+  }
+}
+
+.article-top {
+  // border-top-left-radius: 12px;
+  // border-top-right-radius: 12px;
+  // overflow: hidden;
+  outline: none;
+  border: none;
+}
+
+.articleImage {
+  // background-color: rgba(255, 55, 55, 0.29);
+  // border-top: 1px solid #F4F4F4;
+  // width: 100%;
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  outline: none;
+  border: none;
+}
+
+.articleBottom {
+  padding: 24px 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 800px) {
+    padding: 16px 6px;
+  }
+}
+
+
+.articleBottomTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  margin-bottom: 24px;
+  @media (max-width: 680px) {
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+    .marks {
+      width: 100%;
+      justify-content: end;
+    }
+  }
+
+}
+
+h3 {
+  color: #0A0A0A;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  word-wrap: break-word;
+  @media (max-width: 460px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+}
+
+.marks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  span {
+    color: #4F4F4F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+.articleDescription {
+  margin: 32px 0;
+  color: #0A0A0A;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  @media (max-width: 460px) {
+    margin: 16px 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.articleButton {
+  padding: 14px 24px 12px 24px;
+  border-radius: 60px;
+  border: 2px solid #0A0A0A;
+  background: #FFF;
+  cursor: pointer;
+  color: #0A0A0A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  float: right;
+}
+
+.articleBottomBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    .marks {
+      width: 100%;
+      justify-content: space-between;
+    }
+    a {
+      width: 100%;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
